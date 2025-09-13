@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R A T ✦ B</title>
+  
+  <!-- خط Cairo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (للأيقونات) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- ملف CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="header">
+    <div class="logo">R A T <span class="star">✦</span> B</div>
+
+    <!-- زر الترجمة -->
+    <button class="translate-btn">عربي / EN</button>
+
+    <!-- القائمة للموبايل -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span><span></span><span></span>
+    </label>
+
+    <!-- القوائم -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#about" data-i18n="menu.about">من أنا</a></li>
+        <li><a href="#why" data-i18n="menu.why">ليه تختارني</a></li>
+        <li><a href="#works" data-i18n="menu.works">أعمالي</a></li>
+        <li><a href="#clients" data-i18n="menu.clients">عملائي</a></li>
+        <li><a href="#contact" data-i18n="menu.contact">تواصل</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- الهيرو -->
+  <section class="hero">
+    <h1 class="hero-title" data-i18n="hero.title">احمد ✦ مونتير فيديو</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">المونتاج الإبداعي لجذب جمهورك</p>
+  </section>
+
+  <!-- من أنا -->
+  <section id="about" class="section">
+    <h2 class="section-title" data-i18n="about.title">من أنا</h2>
+    <p class="section-text" data-i18n="about.text">أنا مونتير فيديو محترف بخبرة في تحرير الفيديوهات، الإعلانات، والمحتوى الرقمي.</p>
+  </section>
+
+  <!-- ليه تختارني -->
+  <section id="why" class="section">
+    <h2 class="section-title" data-i18n="why.title">ليه تختارني؟</h2>
+    <div class="services">
+      <div class="service-card">
+        <div class="service-number">1</div>
+        <h3 data-i18n="why.q1">جودة عالية</h3>
+      </div>
+      <div class="service-card">
+        <div class="service-number">2</div>
+        <h3 data-i18n="why.q2">مرونة وسرعة عالية</h3>
+      </div>
+      <div class="service-card">
+        <div class="service-number">3</div>
+        <h3 data-i18n="why.q3">اهتمام بالتفاصيل</h3>
+      </div>
+    </div>
+  </section>
+
+<!-- أعمالي -->
+<section id="works" class="section">
+  <h2 class="section-title" data-i18n="works.title">بعض اعمالي</h2>
+  <div class="works-scroll">
+
+    <!-- فيديو 1 -->
+    <div class="reel-card">
+      <iframe 
+        src="https://www.youtube.com/embed/hdr8oRI_s5M" 
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- فيديو 2 -->
+    <div class="reel-card">
+      <iframe 
+        src="https://www.youtube.com/embed/KEQAVXeQp3M" 
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- فيديو 3 -->
+    <div class="reel-card">
+      <iframe 
+        src="https://www.youtube.com/embed/cDqRiSWdfxI" 
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- فيديو 4 -->
+    <div class="reel-card">
+      <iframe 
+        src="https://www.youtube.com/embed/Q8HBjWuUR_0" 
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- عملائي -->
+  <section id="clients" class="section">
+    <h2 class="section-title" data-i18n="clients.title">بعض صناع المحتوى والشركات تم التعامل معهم</h2>
+    <div class="clients">
+      
+      <!-- كارت عميل -->
+      <div class="client-card">
+        <div class="client-header">
+          <img src="alsmom.jpg" alt="avatar" class="client-avatar">
+          <div class="client-info">
+            <h3 class="client-name" data-i18n="clients.names.client1">عبدالرحمن السموم</h3>
+            <p class="client-followers"><span data-i18n="clients.followers">متابعين</span>: 1.5M</p>
+          </div>
+        </div>
+        <hr class="client-divider">
+        <div class="client-stats">
+          <p class="views-title" data-i18n="clients.views">عدد المشاهدات المحققه :</p>
+          <p class="views-count">3,556,016 View</p>
+        </div>
+      </div>
+
+      <!-- كارت تاني -->
+      <div class="client-card">
+        <div class="client-header">
+          <img src="2.jpg" alt="avatar" class="client-avatar">
+          <div class="client-info">
+            <h3 class="client-name" data-i18n="clients.names.client2">بتاع اقتصاد</h3>
+            <p class="client-followers"><span data-i18n="clients.followers">متابعين</span>: 750k</p>
+          </div>
+        </div>
+        <hr class="client-divider">
+        <div class="client-stats">
+          <p class="views-title" data-i18n="clients.views">عدد المشاهدات المحققه :</p>
+          <p class="views-count">80,543 View</p>
+        </div>
+      </div>
+
+      <!-- كارت تالت -->
+      <div class="client-card">
+        <div class="client-header">
+          <img src="black_horse.jpg" alt="avatar" class="client-avatar">
+          <div class="client-info">
+            <h3 class="client-name" data-i18n="clients.names.client3">بلاك هورس</h3>
+            <p class="client-followers"><span data-i18n="clients.followers">متابعين</span>: 14k</p>
+          </div>
+        </div>
+        <hr class="client-divider">
+        <div class="client-stats">
+          <p class="views-title" data-i18n="clients.views">عدد المشاهدات المحققه :</p>
+          <p class="views-count">16,354 View</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- زر واتساب -->
+  <a href="https://wa.me/201105682536" class="whatsapp-btn" target="_blank" data-i18n="contact.whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> تواصل معنا
+  </a>
+
+  <!-- سكربت الترجمة -->
+  <script>
+    const translations = {
+      ar: {
+        menu: { about: "من أنا", why: "ليه تختارني", works: "أعمالي", clients: "عملائي", contact: "تواصل" },
+        hero: { title: "احمد ✦ مونتير فيديو", subtitle: "المونتاج الإبداعي لجذب جمهورك" },
+        about: { title: "من أنا", text: "أنا مونتير فيديو محترف بخبرة في تحرير الفيديوهات، الإعلانات، والمحتوى الرقمي." },
+        why: { title: "ليه تختارني؟", q1: "جودة عالية", q2: "مرونة وسرعة عالية", q3: "اهتمام بالتفاصيل" },
+        works: { title: "بعض اعمالي" },
+        clients: {
+          title: "بعض صناع المحتوى والشركات تم التعامل معهم",
+          views: "عدد المشاهدات المحققه :",
+          followers: "متابعين",
+          names: { client1: "عبدالرحمن السموم", client2: "بتاع اقتصاد", client3: "بلاك هورس" }
+        },
+        contact: { whatsapp: "تواصل معنا" }
+      },
+      en: {
+        menu: { about: "About Me", why: "Why Choose Me", works: "My Work", clients: "Clients", contact: "Contact" },
+        hero: { title: "Ahmed ✦ Video Editor", subtitle: "Creative editing to engage your audience" },
+        about: { title: "About Me", text: "I am a professional video editor with experience in ads, content, and digital media." },
+        why: { title: "Why Choose Me?", q1: "High Quality", q2: "Flexibility & Fast Delivery", q3: "Attention to Detail" },
+        works: { title: "My Works" },
+        clients: {
+          title: "Some Content Creators & Companies I've Worked With",
+          views: "Total Views Achieved:",
+          followers: "Followers",
+          names: { client1: "Abdelrahman Alsmom", client2: "bta3 ektsad", client3: "Black Horse" }
+        },
+        contact: { whatsapp: "Contact Me" }
+      }
+    };
+
+    function applyTranslations(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        const parts = key.split(".");
+        let value = translations[lang];
+        for (const p of parts) {
+          if (!value) break;
+          value = value[p];
+        }
+        if (value !== undefined) el.innerText = value;
+      });
+    }
+
+    const translateBtn = document.querySelector(".translate-btn");
+
+    function setLang(lang) {
+      applyTranslations(lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === "ar" ? "rtl" : "ltr");
+      localStorage.setItem("lang", lang);
+      translateBtn.innerText = (lang === "ar") ? "عربي / EN" : "EN / عربي";
+    }
+
+    const saved = localStorage.getItem("lang") || "ar";
+    setLang(saved);
+
+    translateBtn.addEventListener("click", () => {
+      const newLang = (document.documentElement.lang === "ar") ? "en" : "ar";
+      setLang(newLang);
+    });
+  </script>
+  
+</body>
+</html>
